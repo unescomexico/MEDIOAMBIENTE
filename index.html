@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medioambiente</title>
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="fondo.css">
+    <style>
+        a{
+          display: block;
+          width: 280px;  
+          font-family: 'Trebuchet MS';
+          font-weight: 1000;
+          background-color: gray;
+          border-radius: 10px;
+          padding: 15px 30px;
+          margin: 60px 80px;
+          color: white;
+          text-decoration: none;
+        }
+        a:hover{
+            background-color: blue;
+            border:2px solid rgb(red, green, blue);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<header>
+    <div id="logo">
+        <img src="images/UNESCO2.png" width="180" height="40" hspace="10"></img>
+        <img src="images/LOGO3.png" width="190" height="35" hspace="10"></img>
+    </div> <align="left">
+        <table CELLPADDING="5">
+            <tr>
+            <th>
+            <form name="formulario2" target="_blank">
+                <select name="sitios">
+                <option>Estadísticas</option>
+                <option value="https://unescomexico.github.io/informepracambientales/">Estadística practicas ambientales</option>
+                <option value="https://unescomexico.github.io/informepracambientales/">Estadística practicas sostenibles</option>
+                <option value="https://unescomexico.github.io/informeactoresmedio/">Estadística actores identificados</option>
+                </select>
+                <input type="button" value="Ir" onclick="window.open(formulario2.sitios.value, this.target, 'resizable=1 ,left=80pt,top=80pt,width=1100px,height=800px'); return false;" target="popup">
+            </th>
+            </tr>
+            </table>
+        </align>
+        </form>
+    </header>
+</header>
+<body>
+    <div class="fondo"></div>
+    <iframe width="1500" height="900" src="https://unescomexico.github.io/mapamedioambiente/" 
+    frameborder="0" style="border:0" allowfullscreen></iframe>
+</body>
+</html>
